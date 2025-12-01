@@ -41,9 +41,8 @@ public class Main {
         if (str == null || str.length() < minLength) {
             return false;
         }
-        final boolean propertyOne = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$", str);
         // as needed, modify this code.
-        return propertyOne;
+        return Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$", str);
     }
 
     // Method 2 for checking if a string conforms to a regex: using Matcher.find
